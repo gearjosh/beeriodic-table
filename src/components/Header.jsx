@@ -9,7 +9,7 @@ function Header(){
         color: white;
       }
     `}</style>
-      <h1>The Official Bunsenbrewer Beeriodic Table</h1>
+      <h1>The Official Bunsenbrewer Beeriodic Table App</h1>
     </div>
   );
 }
