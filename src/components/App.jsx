@@ -15,7 +15,7 @@ function App(){
           box-sizing: border-box;
         }
         html {
-          font-size: 100%;
+          font-size: 14px;
         }
       `}</style>
       <Header/>
