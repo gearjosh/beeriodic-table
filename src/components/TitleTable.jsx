@@ -12,6 +12,7 @@ function TitleTable(){
         font-size: 6rem;
         font-weight: bold;
         padding: .125rem;
+        color: #4a4a4a;
       }
     `}</style>
       TABLE
