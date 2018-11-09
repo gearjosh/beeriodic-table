@@ -1,5 +1,8 @@
 import React from 'react';
 import BeeriodicCell from './BeeriodicCell';
+import TitleBeeriodic from './TitleBeeriodic';
+import TitleTable from './TitleTable';
+import LegendCell from './LegendCell';
 
 const state = {
   masterKegList: [
@@ -222,19 +225,23 @@ function BeeriodicGrid() {
         .beeriodic-grid {
           display: grid;
           grid-auto-flow: dense;
-          grid-template: repeat(auto-fill, 125px)/ repeat(9, 125px);
+          grid-template: repeat(auto-fill, 124px)/ repeat(9, 124px);
           grid-gap: 1px;
         }
       `}</style>
+      <TitleBeeriodic/>
+      <TitleTable className="subtitle"/>
+      <LegendCell/>
       {kegList.map((keg, index) =>
         <BeeriodicCell
-        tapNumber={keg.tapNumber}
-        abbreviation={keg.abbreviation}
-        growlerPrice={keg.growlerPrice}
-        beerName={keg.beerName}
-        beerStyle={keg.beerStyle}
-        brewery={keg.brewery}
-        pintsLeft={keg.pintsLeft}/>
+          tapNumber={keg.tapNumber}
+          abbreviation={keg.abbreviation}
+          growlerPrice={keg.growlerPrice}
+          beerName={keg.beerName}
+          beerStyle={keg.beerStyle}
+          brewery={keg.brewery}
+          pintsLeft={keg.pintsLeft}
+          key={index}/>
       )}
     </div>
   );

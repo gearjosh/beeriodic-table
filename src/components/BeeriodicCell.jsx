@@ -11,30 +11,32 @@ function BeeriodicCell(props){
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          background-color: lightgray;
+          padding: .5rem;
         }
-        .top-columns{
+        .top-column {
           padding: .125rem;
           display: flex;
           flex-direction: row;
           flex-wrap: no-wrap;
           justify-content: space-between;
-        }
-        
-        .tap-number, .growler-price {
-          width: 2rem;
-        }
-        
+          align-items: flex-start;
+        }        
         .tap-number {
           text-align: left;
         }
-        
         .growler-price {
           text-align: right;
         }
-        
+        .bottom-column {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 5rem;
+        }
         .beer-name, .beer-style .brewery {
           display: flex;
-          padding: 8px;
+          align-items: space-between;
           justify-content: center;
         }
         
@@ -59,14 +61,18 @@ function BeeriodicCell(props){
           {props.growlerPrice}
         </div>
       </div>
-      <div className="beer-name">
-        {props.beerName}
-      </div>
-      <div className="beer-style">
-        {props.beerStyle}
-      </div>
-      <div className="brewery">
-        {props.brewery}
+      <div className="bottom-column">
+        <div>
+          <div className="beer-name">
+            {props.beerName}
+          </div>
+          <div className="beer-style">
+            {props.beerStyle}
+          </div>
+        </div>
+        <div className="brewery">
+          {props.brewery}
+        </div>
       </div>
     </div>
   );
