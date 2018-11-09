@@ -41,7 +41,7 @@ Here is the plan for structuring my components:
 
 ## Setup/Installation Requirements
 
-###Install
+### Install
 
 You must have Node.js installed on your machine. If not, follow these pre-instructions:
 
@@ -77,10 +77,10 @@ Now install Node.js like this in terminal: `$ brew install node`.
 - No known bugs.
 
 ## Support and contact details
-- For questions or support you can email me at: comedian.sean.connery@gmail.com.
+- For questions or support open an issue right here in this repo!
 
 ## Technologies Used
-- This uses Javascript, Node.js, and everything listed under _Configuration/dependencies (npm)"_ above.
+- This uses React, Webpack, Javascript, Node.js, and more!
 
 ### License
 This software is licensed under GNU GPLv3.
