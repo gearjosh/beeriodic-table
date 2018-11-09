@@ -14,6 +14,9 @@ function App(){
           font-family: helvetica;
           box-sizing: border-box;
         }
+        html {
+          font-size: 100%;
+        }
       `}</style>
       <Header/>
       <Switch>

@@ -6,14 +6,14 @@ function BeeriodicCell(props){
     <div className="beeriodic-cell">
       <style jsx>{`
         .beeriodic-cell {
-          height: 125px;
-          width: 125px;
-          display:flex;
+          height: 124px;
+          width: 124px;
+          display: flex;
           flex-direction: column;
           justify-content: space-between;
         }
         .top-columns{
-          padding: 4px;
+          padding: .125rem;
           display: flex;
           flex-direction: row;
           flex-wrap: no-wrap;
@@ -21,7 +21,7 @@ function BeeriodicCell(props){
         }
         
         .tap-number, .growler-price {
-          width: 35px;
+          width: 2rem;
         }
         
         .tap-number {
