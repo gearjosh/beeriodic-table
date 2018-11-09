@@ -8,7 +8,7 @@ import AddKegForm from './AddKegForm';
 function App(){
 
   return(
-    <div>
+    <div className="main-container">
       <style jsx global>{`
         * {
           text-align: center;
@@ -17,6 +17,9 @@ function App(){
         }
         html {
           font-size: 14px;
+        }
+        .main-container {
+          padding: 1rem;
         }
         .button {
           border-radius: 5px;

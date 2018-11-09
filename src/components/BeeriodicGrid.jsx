@@ -254,10 +254,10 @@ function BeeriodicGrid() {
         )}
       </div>
       <Link to="/addkeg">
-        <a className="button">Add Keg</a>
+        <button className="button">Add Keg</button>
       </Link>
       <Link to="/">
-        <a className="button">Home</a>
+        <button className="button">Home</button>
       </Link>
     </div>
   );

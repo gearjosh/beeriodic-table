@@ -9,7 +9,7 @@ document.body.style.margin = 0;
 
 const render = (Component) => {
   const containerStyles = {
-    margin: 'none'
+    margin: 'none',
   };
   ReactDOM.render(
     <AppContainer style={containerStyles}>
