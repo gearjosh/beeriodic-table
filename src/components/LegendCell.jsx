@@ -13,7 +13,7 @@ function LegendCell(){
           flex-direction: column;
           justify-content: space-between;
           background-color: lightgray;
-;
+          padding: .125rem;
           margin: auto;
           font-size: 0.75rem;
         }

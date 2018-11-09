@@ -230,12 +230,19 @@ function BeeriodicGrid() {
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
+            margin: 0 auto;
+            max-width: max-content;
           }
           .beeriodic-grid {
             display: grid;
             grid-auto-flow: dense;
             grid-template: repeat(auto-fill, 124px)/ repeat(9, 124px);
             grid-gap: 1px;
+            background-color: #4a4a4a;
+            border-radius: .5rem;
+            padding: 1rem;
+            width: max-content;
+            margin: 0 auto;
           }
         `}</style>
         <TitleBeeriodic/>

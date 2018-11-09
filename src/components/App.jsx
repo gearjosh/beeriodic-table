@@ -20,6 +20,8 @@ function App(){
         }
         .main-container {
           padding: 1rem;
+          margin: 0 auto;
+          max-width: max-content;
         }
         .button {
           border-radius: 5px;
