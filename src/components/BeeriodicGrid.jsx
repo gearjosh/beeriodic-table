@@ -226,16 +226,20 @@ function BeeriodicGrid() {
           grid-gap: 1px;
         }
       `}</style>
-      <BeeriodicCell
-        tapNumber={kegList.tapNumber}
-        abbreviation={kegList.abbreviation}
-        growlerPrice={kegList.growlerPrice}
-        beerName={kegList.beerName}
-        beerStyle={kegList.beerStyle}
-        brewery={kegList.brewery}
-        pintsLeft={kegList.pintsLeft}/>
+      {kegList.map((keg, index) =>
+        <BeeriodicCell
+        tapNumber={keg.tapNumber}
+        abbreviation={keg.abbreviation}
+        growlerPrice={keg.growlerPrice}
+        beerName={keg.beerName}
+        beerStyle={keg.beerStyle}
+        brewery={keg.brewery}
+        pintsLeft={keg.pintsLeft}/>
+      )}
     </div>
   );
 }
 
 export default BeeriodicGrid;
+
+
