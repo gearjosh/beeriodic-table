@@ -8,6 +8,13 @@ function App(){
 
   return(
     <div>
+      <style jsx global>{`
+        * {
+          text-align: center;
+          font-family: helvetica;
+          box-sizing: border-box;
+        }
+      `}</style>
       <Header/>
       <Switch>
         <Route exact path="/" component={BeeriodicGrid}/>

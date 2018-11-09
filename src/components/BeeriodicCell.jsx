@@ -12,6 +12,41 @@ function BeeriodicCell(props){
           flex-direction: column;
           justify-content: space-between;
         }
+        .top-columns{
+          padding: 4px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: no-wrap;
+          justify-content: space-between;
+        }
+        
+        .tap-number, .growler-price {
+          width: 35px;
+        }
+        
+        .tap-number {
+          text-align: left;
+        }
+        
+        .growler-price {
+          text-align: right;
+        }
+        
+        .beer-name, .beer-style .brewery {
+          display: flex;
+          padding: 8px;
+          justify-content: center;
+        }
+        
+        .brewery {
+          font-style: italic;
+          font-weight: lighter;
+        }
+        
+        .abbreviation {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
       `}</style>
       <div className="top-column">
         <div className="tap-number">
