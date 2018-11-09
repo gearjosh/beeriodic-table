@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import BeeriodicCell from './BeeriodicCell';
 import TitleBeeriodic from './TitleBeeriodic';
 import TitleTable from './TitleTable';
@@ -220,29 +222,43 @@ const kegList = state.masterKegList;
 
 function BeeriodicGrid() {
   return (
-    <div className="beeriodic-grid">
-      <style jsx>{`
-        .beeriodic-grid {
-          display: grid;
-          grid-auto-flow: dense;
-          grid-template: repeat(auto-fill, 124px)/ repeat(9, 124px);
-          grid-gap: 1px;
-        }
-      `}</style>
-      <TitleBeeriodic/>
-      <TitleTable className="subtitle"/>
-      <LegendCell/>
-      {kegList.map((keg, index) =>
-        <BeeriodicCell
-          tapNumber={keg.tapNumber}
-          abbreviation={keg.abbreviation}
-          growlerPrice={keg.growlerPrice}
-          beerName={keg.beerName}
-          beerStyle={keg.beerStyle}
-          brewery={keg.brewery}
-          pintsLeft={keg.pintsLeft}
-          key={index}/>
-      )}
+    <div className="grid-container">
+      <div className="beeriodic-grid">
+        <style jsx>{`
+          .grid-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+          }
+          .beeriodic-grid {
+            display: grid;
+            grid-auto-flow: dense;
+            grid-template: repeat(auto-fill, 124px)/ repeat(9, 124px);
+            grid-gap: 1px;
+          }
+        `}</style>
+        <TitleBeeriodic/>
+        <TitleTable className="subtitle"/>
+        <LegendCell/>
+        {kegList.map((keg, index) =>
+          <BeeriodicCell
+            tapNumber={keg.tapNumber}
+            abbreviation={keg.abbreviation}
+            growlerPrice={keg.growlerPrice}
+            beerName={keg.beerName}
+            beerStyle={keg.beerStyle}
+            brewery={keg.brewery}
+            pintsLeft={keg.pintsLeft}
+            key={index}/>
+        )}
+      </div>
+      <Link to="/addkeg">
+        <a className="button">Add Keg</a>
+      </Link>
+      <Link to="/">
+        <a className="button">Home</a>
+      </Link>
     </div>
   );
 }

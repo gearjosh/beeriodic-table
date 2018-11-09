@@ -3,7 +3,7 @@ import React from 'react';
 function Header(){
   return(
     <div>
-    <style jsx>{`
+      <style jsx>{`
       h1 {
         background: linear-gradient(to right, wheat, goldenrod, saddlebrown, maroon);
         color: white;
