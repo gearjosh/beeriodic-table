@@ -1,10 +1,10 @@
 {
-  "name": "beeriodic table",
+  "name": "beeriodic-table",
   "version": "1.0.0",
   "description": "",
   "main": "index.jsx",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --open",
     "build": "webpack",
     "lint": "eslint src/** src/**/**; exit 0",
     "lint-fix": "eslint src/** src/**/** --fix; exit 0"

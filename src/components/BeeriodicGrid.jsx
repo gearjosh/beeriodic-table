@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import BeeriodicCell from './BeeriodicCell';
 
 const state = {
   masterKegList: [
@@ -209,9 +210,10 @@ const state = {
       brewery: 'Crater Lake',
       pintsLeft: '34',
     },
-    
   ]
-}
+};
+
+const kegList = state.masterKegList;
 
 function BeeriodicGrid() {
   return (
@@ -224,7 +226,14 @@ function BeeriodicGrid() {
           grid-gap: 1px;
         }
       `}</style>
-      <BeeriodicCell/>
+      <BeeriodicCell
+        tapNumber={kegList.tapNumber}
+        abbreviation={kegList.abbreviation}
+        growlerPrice={kegList.growlerPrice}
+        beerName={kegList.beerName}
+        beerStyle={kegList.beerStyle}
+        brewery={kegList.brewery}
+        pintsLeft={kegList.pintsLeft}/>
     </div>
   );
 }
