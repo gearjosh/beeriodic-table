@@ -7,7 +7,7 @@ function App(){
     <div>
       <Header/>
       <Switch>
-        <Route exact path="/" component={} />
+        <Route exact path="/" component={BeeriodicGrid}/>
       </Switch>
     </div>
   );

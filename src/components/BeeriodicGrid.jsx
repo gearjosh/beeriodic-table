@@ -224,7 +224,7 @@ function BeeriodicGrid() {
           grid-gap: 1px;
         }
       `}</style>
-      
+      <BeeriodicCell/>
     </div>
   );
 }
