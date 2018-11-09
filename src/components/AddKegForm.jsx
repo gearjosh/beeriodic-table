@@ -11,10 +11,9 @@ function AddKegForm(){
             margin-top: 5px;
             background-color: #4A4A4A;
             width: 15rem;
-            line-height: 25px;
-            padding: 5px;
-            border-radius: 5px;
-            color: white;
+            line-height: 1.8rem;
+            padding: .5rem;
+            border-radius: .5rem;
           }
 
         `}</style>
