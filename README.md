@@ -12,7 +12,7 @@ It looks like this:
 
 ![beeriodic table app](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/screenshot.png)
 
-This is the actual menu the app is based on:
+This is the actual menu from [the actual bar](http://www.bunsenbrewer.com/) the app is based on:
 
 ![beeriodic table chalkboard menu](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/real-beeriodic-table.jpg)
 
