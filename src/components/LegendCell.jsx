@@ -12,7 +12,8 @@ function LegendCell(){
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          background-color: lightgray;
+          background-color: #E5E4E3;
+          color: #333;
           padding: .125rem;
           margin: auto;
           font-size: 0.75rem;

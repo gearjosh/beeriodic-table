@@ -31,6 +31,7 @@ function AddKegForm(){
           <input className="add-keg-input" placeholder="Tap Number" type="text"/>
           <input className="add-keg-input" placeholder="Beer Name" type="text"/>
           <input className="add-keg-input" placeholder="Beer Style" type="text"/>
+          <input className="add-keg-input" placeholder="Abbreviation" type="text"/>
           <input className="add-keg-input" placeholder="Brewery" type="text"/>
           <input className="add-keg-input" placeholder="Growler Price" type="number"/>
           <br/>

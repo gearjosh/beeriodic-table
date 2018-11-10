@@ -34,6 +34,7 @@ function EditKegForm(){
         <form>
           <input className="edit-keg-input" placeholder="Edit Beer Name" type="text"/>
           <input className="edit-keg-input" placeholder="Edit Beer Style" type="text"/>
+          <input className="edit-keg-input" placeholder="Edit Beer Abbreviation" type="text"/>
           <input className="edit-keg-input" placeholder="Edit Brewery" type="text"/>
           <input className="edit-keg-input" placeholder="Edit Growler Price" type="number"/>
           <br/>
