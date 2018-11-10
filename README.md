@@ -73,7 +73,7 @@ If you have a windows machine, you may also need a terminal program.  If so, dow
 - It's hard to tell how to form the components in my beeriodic cells.  Because the grid will take in the master keg list, it could just populate the entire grid within a single component.  And since the grid will show on every screen, it's not like I'll be reusing that code outside the component itself...
 
 ## Known Bugs
-- No known bugs. But... it doesn't _do_ anything yet.  All there is is the bones right now.  But... soon you'll be able to use it to actually track beer!
+- No known bugs. But... it doesn't _do_ anything yet.  All there is is the bones right now.  Soon, though, you'll be able to use it to actually track beer!
 
 ## Support and contact details
 - For questions or support open an issue right here in this repo!
