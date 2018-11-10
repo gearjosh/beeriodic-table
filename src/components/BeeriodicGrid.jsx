@@ -266,6 +266,9 @@ function BeeriodicGrid() {
       <Link to="/">
         <button className="button">Home</button>
       </Link>
+      <Link to="/editkeg">
+        <button className="button">Edit Keg</button>
+      </Link>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import BeeriodicGrid from './BeeriodicGrid';
 import AddKegForm from './AddKegForm';
+import EditKegForm from './EditKegForm';
 
 function App(){
 
@@ -38,6 +39,7 @@ function App(){
       <Switch>
         <Route exact path="/" component={BeeriodicGrid}/>
         <Route path="/addkeg" component={AddKegForm}/>
+        <Route path="/editkeg" component={EditKegForm}/>
       </Switch>
     </div>
   );
