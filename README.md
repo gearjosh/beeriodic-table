@@ -8,6 +8,8 @@
 
 This is a rebuild of a previous site I made in Angular.  This time, however, I'm designing it to fit more closely with how his actual bar works.  Some of the previous  elements have been changed (ABV became Price per Growler, for instance), but the spirit is the same as the original.
 
+At this point, there is no interaction beyond routing.  This is simply the skeleton.
+
 It looks like this:
 
 ![beeriodic table app](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/screenshot.png)
@@ -71,7 +73,7 @@ If you have a windows machine, you may also need a terminal program.  If so, dow
 - It's hard to tell how to form the components in my beeriodic cells.  Because the grid will take in the master keg list, it could just populate the entire grid within a single component.  And since the grid will show on every screen, it's not like I'll be reusing that code outside the component itself...
 
 ## Known Bugs
-- No known bugs.
+- No known bugs. But... it doesn't _do_ anything yet.  All there is is the bones right now.  But... soon you'll be able to use it to actually track beer!
 
 ## Support and contact details
 - For questions or support open an issue right here in this repo!
