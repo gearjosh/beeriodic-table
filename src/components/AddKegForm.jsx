@@ -24,6 +24,7 @@ function AddKegForm(){
             background-color: #fafafa;
             border: none;
             border-radius: 0.25rem;
+            outline-color: goldenrod;
           }
         `}</style>
         <form>
