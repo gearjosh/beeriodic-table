@@ -24,6 +24,8 @@ Here was my plan for structuring my components:
 
 You must have Node.js installed on your machine. If not, follow these pre-instructions:
 
+****
+
 #### _For OSX_
 
 - First, install Homebrew if it is not installed on your computer already.
