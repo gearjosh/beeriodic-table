@@ -18,6 +18,7 @@ function App(){
         }
         html {
           font-size: 14px;
+          background-color: #fafafa;
         }
         .main-container {
           padding: 1rem;
