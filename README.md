@@ -8,6 +8,10 @@
 
 This is a rebuild of a previous site I made in Angular.  This time, however, I'm designing it to fit more closely with how his actual bar works.  Some of the previous  elements have been changed (ABV became Price per Growler, for instance), but the spirit is the same as the original.
 
+This is the actual menu the app is based on:
+
+![beeriodic table chalkboard menu](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/real-beeriodic-table.jpg)
+
 Designing in React feels a lot more elegant than design in Angular.  I feel like I'm only building the components I absolutely need, and they're not bloated with _any_ extra code.  I love it.  It feels more free, and spinning up new components is a breeze.  Routing feels more elegant as well, with fewer pieces needed to link about.
 
 ## Planning
