@@ -1,8 +1,14 @@
-# Sidewalk Doc
+# Bunsenbrewer Beeriodic Table
 
-#### A program to help you find a doctor, October 12, 2018
+#### A program to help track kegs for my friend's bar, November 9, 2018
 
 #### By Josh Gearheart
+
+## Description
+
+This is a rebuild of a previous site I made in Angular.  This time, however, I'm designing it to fit more closely with how his actual bar works.  Some of the previous  elements have been changed (ABV became Price per Growler, for instance), but the spirit is the same as the original.
+
+Designing in React feels a lot more elegant than design in Angular.  I feel like I'm only building the components I absolutely need, and they're not bloated with _any_ extra code.  I love it.  It feels more free, and spinning up new components is a breeze.  Routing feels more elegant as well, with fewer pieces needed to link about.
 
 ## Planning
 
@@ -65,8 +71,8 @@ Now install Node.js like this in terminal: `$ brew install node`.
 #### _Once Node.js is installed_
 
 - Open terminal and enter `$ cd Desktop` (or your preferred destination).
-- Then enter `$ git clone XXXXX`.
-- Enter `$ cd XXXXX`.
+- Then enter `$ git clone https://github.com/gearjosh/beeriodic-table.git`.
+- Enter `$ cd beeriodic-table`.
 - Enter `$ npm install`
 - Finally, enter `$ npm run start`.
 
