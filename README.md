@@ -12,42 +12,15 @@ Designing in React feels a lot more elegant than design in Angular.  I feel like
 
 ## Planning
 
-Here is the plan for structuring my components:
+Here was my plan for structuring my components:
 
 ![component structure drawing](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/component-structure.jpg)
-
-<!-- ### Configuration/dependencies (npm)
-  - babel-core 6.26.0: a transpiler that turns new jacascript into old javascript
-  - babel-loader 7.1.3: a loader for babel
-  - babel-preset-es2015 6.24.1: a preset to transpile ES6
-  - clean-webpack-plugin 0.1.18: empties the dist folder before building
-  - css-loader 0.28.10: loads css for webpack
-  - eslint 4.18.2: checks code for errors and bad practices
-  - eslint-loader 2.0.0: loads files for eslint
-  - html-webpack-plugin 3.0.6: bundles html for webpack
-  - jasmine 3.1.0: helper that tests the javascript code so that the program can run tests
-  - jasmine-core 2.99.0: this is the piece that must be installed before the helper (above)
-  - karma 2.0.0: a test runner for jasmine
-  - karma-chrome-launcher 2.2.0: launches a chrome window to see tests in real time
-  - karma-cli 1.0.1: allows karma commands through the command line
-  - karma-jasmine 1.1.1: allows karma and jasmine to work together
-  - karma-jasmine-html-reporter 0.2.2: allows debug window in chrome to dynamically display test results
-  - karma-jquery 0.2.2: allows karma to parse jquery
-  - karma-sourcemap-loader 0.3.7: allows karma to accurately source map errors
-  - karma-webpack 2.0.13: allows karma to work with webpack
-  - style-loader 0.20.2: loads css for webpack
-  - uglifyjs-webpack-plugin 1.2.2: minifies code for distribution to increase performance
-  - webpack 4.0.1: bundles the code together
-  - webpack-cli 2.0.9: allows webpack commands through the command line
-  - webpack-dev-server 3.1.0: creates a server for development
-  - jquery 3.3.1: enables jquery commands
-  - dotenv webpack 1.5.7: manages api keys -->
 
 ### Specs
 
 ## Setup/Installation Requirements
 
-### Install
+### Pre-Install
 
 You must have Node.js installed on your machine. If not, follow these pre-instructions:
 
@@ -68,7 +41,7 @@ Now install Node.js like this in terminal: `$ brew install node`.
 
 ****
 
-#### _Once Node.js is installed_
+### Install
 
 - Open terminal and enter `$ cd Desktop` (or your preferred destination).
 - Then enter `$ git clone https://github.com/gearjosh/beeriodic-table.git`.
@@ -86,7 +59,7 @@ Now install Node.js like this in terminal: `$ brew install node`.
 - For questions or support open an issue right here in this repo!
 
 ## Technologies Used
-- This uses React, Webpack, Javascript, Node.js, and more!
+- This uses React, Webpack, Javascript, npm, and more!
 
 ### License
 This software is licensed under GNU GPLv3.
