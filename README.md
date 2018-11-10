@@ -55,7 +55,9 @@ Now install Node.js like this in terminal: `$ brew install node`.
 
 #### **Windows Users**
 
-If you have a windows machine, you may also need a terminal program.  If so, download and install Git Bash at msysgit.github.io, and open your new terminal program before continuing.
+If you have a windows machine, you may also need a terminal program.  If so, download and install Git BASH at msysgit.github.io, and open it before continuing.
+
+****
 
 ### Install
 
