@@ -24,13 +24,13 @@ function App(){
           max-width: max-content;
         }
         .button {
-          border-radius: 5px;
-          margin: 5px;
+          border-radius: 0.5rem;
+          margin: 1rem;
           font-size: 0.9em;
           border: none;
           background-color: goldenrod;
           color: saddlebrown;
-          padding: 5px;
+          padding: 0.5rem;
           display: inline-block;
         }
       `}</style>
