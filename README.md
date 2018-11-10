@@ -8,6 +8,10 @@
 
 This is a rebuild of a previous site I made in Angular.  This time, however, I'm designing it to fit more closely with how his actual bar works.  Some of the previous  elements have been changed (ABV became Price per Growler, for instance), but the spirit is the same as the original.
 
+It looks like this:
+
+![beeriodic table app](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/screenshot.png)
+
 This is the actual menu the app is based on:
 
 ![beeriodic table chalkboard menu](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/real-beeriodic-table.jpg)
