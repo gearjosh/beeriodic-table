@@ -53,6 +53,8 @@ Now install Node.js like this in terminal: `$ brew install node`.
 
 ### Install
 
+#### _For OSX_
+
 - Open terminal and enter `$ cd Desktop` (or your preferred destination).
 - Then enter `$ git clone https://github.com/gearjosh/beeriodic-table.git`.
 - Enter `$ cd beeriodic-table`.
