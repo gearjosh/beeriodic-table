@@ -23,7 +23,7 @@ function EditKegForm(props){
       <input className="edit-keg-input" placeholder={props.keglist[props.kegSelected].brewery} type="text"/>
       <input className="edit-keg-input" placeholder={props.keglist[props.kegSelected].growlerPrice} type="number"/>
       <br/>
-      <button className="button">Done Editing</button>
+    <button className="button">Update Keg</button>
       <button className="button">Cancel</button>
     </form>;
     editFormToShow = editFormWithKegSelected;
@@ -47,7 +47,7 @@ function EditKegForm(props){
       <input className="edit-keg-input" placeholder="Edit Brewery" type="text"/>
       <input className="edit-keg-input" placeholder="Edit Growler Price" type="number"/>
       <br/>
-      <button className="button">Done Editing</button>
+    <button className="button">Update Keg</button>
       <button className="button">Cancel</button>
     </form>;
     editFormToShow = editFormNoKegSelected;
