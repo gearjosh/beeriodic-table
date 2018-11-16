@@ -56,6 +56,9 @@ function EditKegForm(props){
     <div>
       <div className="edit-area">
         <style jsx>{`
+          h2 {
+            color: goldenrod;
+          }
           .edit-area {
             margin-top: 5px;
             background-color: #4A4A4A;
@@ -67,6 +70,7 @@ function EditKegForm(props){
             margin: 0 auto;
           }
         `}</style>
+        <h2>Edit Keg</h2>
         {editFormToShow}
       </div>
     </div>

@@ -248,7 +248,7 @@ class App extends React.Component {
           }
           .button {
             border-radius: 0.5rem;
-            margin: 1rem;
+            margin: .5rem;
             font-size: 0.9em;
             border: none;
             background-color: goldenrod;
@@ -265,7 +265,7 @@ class App extends React.Component {
         <Header/>
         <BeeriodicGrid keglist={this.state.masterKegList} onBeeriodicCellSelection={this.handleBeeriodicCellSelection}/>
         <div className="lower-container">
-          <AddRemoveKegForm/>
+          <AddRemoveKegForm keglist={this.state.masterKegList} kegSelected={this.state.kegSelected}/>
           <EditKegForm keglist={this.state.masterKegList} kegSelected={this.state.kegSelected}/>
         </div>
       </div>

@@ -1,10 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function AddRemoveKegForm(){
+function AddRemoveKegForm(props){
+  let removeElementToShow = null;
+  if (props.kegSelected != null) {
+    const dangerStyle = {
+      backgroundColor: 'maroon',
+      color: 'wheat'
+    }
+    const removeButtonWithKegSelected = <button style={dangerStyle} className="button">Remove {props.keglist[props.kegSelected].beerName} {props.keglist[props.kegSelected].beerStyle}</button>;
+    removeElementToShow = removeButtonWithKegSelected;
+  } else {
+    const textStyle = {
+      color: 'wheat'
+    }
+    const removeTextNoKegSelected = <p style={textStyle}>No Keg Selected</p>;
+    removeElementToShow = removeTextNoKegSelected;
+  }
   return (
     <div>
       <div className="add-area">
         <style jsx>{`
+          h2 {
+            color: goldenrod;
+          }
+          hr {
+            border-color: goldenrod;
+          }
           .add-area {
             margin-top: 5px;
             background-color: #4A4A4A;
@@ -26,11 +48,10 @@ function AddRemoveKegForm(){
             outline-color: goldenrod;
           }
         `}</style>
-        <form>
-          <input className="add-remove-keg-input" placeholder="Tap Number"/>
-          <br/>
-          <button className="button">Remove Keg</button>
-        </form>
+        <h2>Remove Keg</h2>
+        {removeElementToShow}
+        <hr/>
+        <h2>Add Keg</h2>
         <form>
           <input className="add-remove-keg-input" placeholder="Tap Number" type="text"/>
           <input className="add-remove-keg-input" placeholder="Beer Name" type="text"/>
@@ -45,6 +66,11 @@ function AddRemoveKegForm(){
       </div>
     </div>
   );
+}
+
+AddRemoveKegForm.propTypes = {
+  keglist: PropTypes.object,
+  kegSelected: PropTypes.string
 }
 
 export default AddRemoveKegForm;
