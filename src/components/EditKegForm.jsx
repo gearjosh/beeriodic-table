@@ -30,6 +30,9 @@ function EditKegForm(props){
   } else {
     const editFormNoKegSelected = <form>
       <style jsx>{`
+        p {
+          color: wheat;
+        }
         .edit-keg-input {
           width: 90%;
           margin: 0.25rem;
@@ -41,11 +44,12 @@ function EditKegForm(props){
           outline-color: goldenrod;
         }
       `}</style>
-      <input className="edit-keg-input" placeholder="Edit Beer Name" type="text"/>
-      <input className="edit-keg-input" placeholder="Edit Beer Style" type="text"/>
-      <input className="edit-keg-input" placeholder="Edit Beer Abbreviation" type="text"/>
-      <input className="edit-keg-input" placeholder="Edit Brewery" type="text"/>
-      <input className="edit-keg-input" placeholder="Edit Growler Price" type="number"/>
+      <p>No Keg Selected</p>
+      <input className="edit-keg-input" placeholder="No Beer Name Selected" type="text"/>
+      <input className="edit-keg-input" placeholder="No Beer Style Selected" type="text"/>
+      <input className="edit-keg-input" placeholder="No Beer Abbreviation Selected" type="text"/>
+      <input className="edit-keg-input" placeholder="No Brewery Selected" type="text"/>
+      <input className="edit-keg-input" placeholder="No Growler Price Selected" type="number"/>
       <br/>
       <button className="button">Update Keg</button>
       <button className="button">Cancel</button>
