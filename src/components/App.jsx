@@ -1,5 +1,4 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
 
 import Header from './Header';
 import BeeriodicGrid from './BeeriodicGrid';
@@ -227,7 +226,6 @@ class App extends React.Component {
 
   handleBeeriodicCellSelection(tapId) {
     this.setState({kegSelected: tapId});
-    console.log('the tap ID is ' + this.state.kegSelected);
   }
 
   render() {

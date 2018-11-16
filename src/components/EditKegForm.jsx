@@ -23,7 +23,7 @@ function EditKegForm(props){
       <input className="edit-keg-input" placeholder={props.keglist[props.kegSelected].brewery} type="text"/>
       <input className="edit-keg-input" placeholder={props.keglist[props.kegSelected].growlerPrice} type="number"/>
       <br/>
-    <button className="button">Update Keg</button>
+      <button className="button">Update Keg</button>
       <button className="button">Cancel</button>
     </form>;
     editFormToShow = editFormWithKegSelected;
@@ -47,7 +47,7 @@ function EditKegForm(props){
       <input className="edit-keg-input" placeholder="Edit Brewery" type="text"/>
       <input className="edit-keg-input" placeholder="Edit Growler Price" type="number"/>
       <br/>
-    <button className="button">Update Keg</button>
+      <button className="button">Update Keg</button>
       <button className="button">Cancel</button>
     </form>;
     editFormToShow = editFormNoKegSelected;
@@ -66,22 +66,7 @@ function EditKegForm(props){
             border-radius: .5rem;
             margin: 0 auto;
           }
-          .edit-keg-input {
-            width: 90%;
-            margin: 0.25rem;
-            height: 2rem;
-            font-size: 1rem;
-            background-color: #fafafa;
-            border: none;
-            border-radius: 0.25rem;
-            outline-color: goldenrod;
-          }
         `}</style>
-        <form>
-          <input className="edit-keg-input" placeholder="Tap Number" type="number"/>
-          <br/>
-          <button className="button">Load Keg</button>
-        </form>
         {editFormToShow}
       </div>
     </div>
@@ -91,6 +76,6 @@ function EditKegForm(props){
 EditKegForm.propTypes = {
   keglist: PropTypes.object,
   kegSelected: PropTypes.string
-}
+};
 
 export default EditKegForm;
