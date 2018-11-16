@@ -221,6 +221,8 @@ class App extends React.Component {
         }
       }
     };
+    this.kegToEdit = null; //will be used in EditKegForm
+    this.kegToPourFrom = null; //will be used to sell beers by clicking on their cells in the grid
   }
 
   render() {
