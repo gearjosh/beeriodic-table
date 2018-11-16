@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Header from './Header';
 import BeeriodicGrid from './BeeriodicGrid';
-import AddKegForm from './AddKegForm';
+import AddRemoveKegForm from './AddRemoveKegForm';
 import EditKegForm from './EditKegForm';
 
 class App extends React.Component {
@@ -259,13 +259,18 @@ class App extends React.Component {
             padding: 0.5rem;
             display: inline-block;
           }
+          .lower-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
         `}</style>
         <Header/>
         <BeeriodicGrid keglist={this.state.masterKegList} onBeeriodicCellSelection={this.handleBeeriodicCellSelection}/>
-        <Switch>
-          <Route path="/addkeg" component={AddKegForm}/>
-          <Route path="/editkeg" component={EditKegForm}/>
-        </Switch>
+        <div className="lower-container">
+          <AddRemoveKegForm/>
+          <EditKegForm/>
+        </div>
       </div>
     );
   }

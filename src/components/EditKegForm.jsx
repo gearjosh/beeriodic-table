@@ -8,14 +8,15 @@ function EditKegForm(){
           .edit-area {
             margin-top: 5px;
             background-color: #4A4A4A;
-            width: 30rem;
+            max-width: 30vw;
+            min-width: 20rem;
             line-height: 1.8rem;
             padding: .5rem;
             border-radius: .5rem;
             margin: 0 auto;
           }
           .edit-keg-input {
-            width: 27rem;
+            width: 90%;
             margin: 0.25rem;
             height: 2rem;
             font-size: 1rem;
@@ -27,6 +28,7 @@ function EditKegForm(){
         `}</style>
         <form>
           <input className="edit-keg-input" placeholder="Tap Number" type="number"/>
+          <br/>
           <button className="button">Load Keg</button>
         </form>
         <form>

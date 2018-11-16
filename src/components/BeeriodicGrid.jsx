@@ -29,7 +29,7 @@ function BeeriodicGrid(props) {
             border-radius: .5rem;
             padding: 1rem;
             width: max-content;
-            margin: 0 auto;
+            margin: 1rem auto;
           }
         `}</style>
         <TitleBeeriodic/>
@@ -50,15 +50,6 @@ function BeeriodicGrid(props) {
             onBeeriodicCellSelection={props.onBeeriodicCellSelection}/>;
         })}
       </div>
-      <Link to="/addkeg">
-        <button className="button">Add Keg</button>
-      </Link>
-      <Link to="/">
-        <button className="button">Home</button>
-      </Link>
-      <Link to="/editkeg">
-        <button className="button">Edit Keg</button>
-      </Link>
     </div>
   );
 }

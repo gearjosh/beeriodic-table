@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AddKegForm(){
+function AddRemoveKegForm(){
   return (
     <div>
       <div className="add-area">
@@ -8,14 +8,15 @@ function AddKegForm(){
           .add-area {
             margin-top: 5px;
             background-color: #4A4A4A;
-            width: 30rem;
+            max-width: 30vw;
+            min-width: 20rem;
             line-height: 1.8rem;
             padding: .5rem;
             border-radius: .5rem;
             margin: 0 auto;
           }
           .add-keg-input {
-            width: 27rem;
+            width: 90%;
             margin: 0.25rem;
             height: 2rem;
             font-size: 1rem;
@@ -25,6 +26,9 @@ function AddKegForm(){
             outline-color: goldenrod;
           }
         `}</style>
+        <form>
+          
+        </form>
         <form>
           <input className="add-keg-input" placeholder="Tap Number" type="text"/>
           <input className="add-keg-input" placeholder="Beer Name" type="text"/>
@@ -41,4 +45,4 @@ function AddKegForm(){
   );
 }
 
-export default AddKegForm;
+export default AddRemoveKegForm;
