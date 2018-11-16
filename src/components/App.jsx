@@ -37,8 +37,8 @@ function App(){
         }
       `}</style>
       <Header/>
+    <BeeriodicGrid/>
       <Switch>
-        <Route exact path="/" component={BeeriodicGrid}/>
         <Route path="/addkeg" component={AddKegForm}/>
         <Route path="/editkeg" component={EditKegForm}/>
       </Switch>

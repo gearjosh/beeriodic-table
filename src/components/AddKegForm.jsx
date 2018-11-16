@@ -4,7 +4,6 @@ import BeeriodicGrid from './BeeriodicGrid';
 function AddKegForm(){
   return (
     <div>
-      <BeeriodicGrid/>
       <div className="add-area">
         <style jsx>{`
           .add-area {
