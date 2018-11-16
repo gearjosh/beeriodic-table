@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import BeeriodicCell from './BeeriodicCell';
 import TitleBeeriodic from './TitleBeeriodic';
@@ -220,7 +221,7 @@ const state = {
 
 const kegList = state.masterKegList;
 
-function BeeriodicGrid() {
+function BeeriodicGrid(props) {
   return (
     <div className="grid-container">
       <div className="beeriodic-grid">
@@ -257,7 +258,8 @@ function BeeriodicGrid() {
             beerStyle={keg.beerStyle}
             brewery={keg.brewery}
             pintsLeft={keg.pintsLeft}
-            key={index}/>
+            key={index}
+            onBeeriodicCellSelection={props.onBeeriodicCellSelection}/>
         )}
       </div>
       <Link to="/addkeg">
@@ -271,6 +273,10 @@ function BeeriodicGrid() {
       </Link>
     </div>
   );
+}
+
+BeeriodicGrid.propTypes = {
+  onBeeriodicCellSelection: PropTypes.func
 }
 
 export default BeeriodicGrid;

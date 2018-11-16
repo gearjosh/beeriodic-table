@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 function BeeriodicCell(props){
   return (
-    <div className="beeriodic-cell">
+    <div className="beeriodic-cell"
+      onClick={props.onBeeriodicCellSelection}>
       <style jsx>{`
         .beeriodic-cell {
           height: 124px;
@@ -22,7 +23,7 @@ function BeeriodicCell(props){
           flex-wrap: no-wrap;
           justify-content: space-between;
           align-items: flex-start;
-        }        
+        }
         .tap-number {
           text-align: left;
         }
@@ -40,12 +41,12 @@ function BeeriodicCell(props){
           align-items: space-between;
           justify-content: center;
         }
-        
+
         .brewery {
           font-style: italic;
           font-weight: lighter;
         }
-        
+
         .abbreviation {
           font-size: 1.5rem;
           font-weight: bold;
@@ -86,7 +87,8 @@ BeeriodicCell.propTypes = {
   beerName: PropTypes.string,
   beerStyle: PropTypes.string,
   brewery: PropTypes.string,
-  pintsLeft: PropTypes.string
+  pintsLeft: PropTypes.string,
+  onBeeriodicCellSelection: PropTypes.func
 };
 
 export default BeeriodicCell;

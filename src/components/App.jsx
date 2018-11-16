@@ -221,8 +221,13 @@ class App extends React.Component {
         }
       }
     };
+    this.handleBeeriodicCellSelection = this.handleBeeriodicCellSelection.bind(this);
     this.tapIdToEdit = null; //will be used in EditKegForm
     this.tapIdToPourFrom = null; //will be used to sell beers by clicking on their cells in the grid
+  }
+
+  handleBeeriodicCellSelection() {
+    console.log('this was a successful click!');
   }
 
   render() {
@@ -255,7 +260,7 @@ class App extends React.Component {
           }
         `}</style>
         <Header/>
-        <BeeriodicGrid/>
+      <BeeriodicGrid onBeeriodicCellSelection={this.handleBeeriodicCellSelection}/>
         <Switch>
           <Route path="/addkeg" component={AddKegForm}/>
           <Route path="/editkeg" component={EditKegForm}/>
