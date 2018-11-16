@@ -22,7 +22,11 @@ Designing in React feels a lot more elegant than design in Angular.  I feel like
 
 ## Planning
 
-Here was my plan for structuring my components:
+Below is the most up-to-date documentation of my planned components.  This is a slight change from my original idea,  in which BeeriodicTable was nested inside each route.  In this updated version, it lives directly in App, and the router only routes to admin options such as adding or editing kegs.
+
+![component structure drawing 2](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/component-map-2.jpg)
+
+Here was my original plan for structuring my components:
 
 ![component structure drawing](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/component-structure.jpg)
 
