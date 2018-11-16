@@ -15,6 +15,7 @@ function BeeriodicCell(props){
           background-color: #E5E4E3;
           color: #333;
           padding: .5rem;
+          cursor: pointer;
         }
         .top-column {
           padding: .125rem;
