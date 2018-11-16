@@ -8,7 +8,8 @@ import EditKegForm from './EditKegForm';
 
 class App extends React.Component {
 
-  constructor(){
+  constructor(props){
+    super(props);
     this.state = {
       masterKegList: {
         '1': {
@@ -219,7 +220,7 @@ class App extends React.Component {
           pintsLeft: '34',
         }
       }
-    }
+    };
   }
 
   render() {

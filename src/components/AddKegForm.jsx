@@ -1,5 +1,4 @@
 import React from 'react';
-import BeeriodicGrid from './BeeriodicGrid';
 
 function AddKegForm(){
   return (
