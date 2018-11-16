@@ -274,5 +274,3 @@ function BeeriodicGrid() {
 }
 
 export default BeeriodicGrid;
-
-
