@@ -8,12 +8,12 @@ function EditKegForm(props){
       <style jsx>{`
         .edit-keg-input {
           width: 90%;
-          margin: 0.25rem;
+          margin: .25rem;
           height: 2rem;
           font-size: 1rem;
           background-color: #fafafa;
           border: none;
-          border-radius: 0.25rem;
+          border-radius: .25rem;
           outline-color: goldenrod;
         }
       `}</style>
@@ -35,12 +35,12 @@ function EditKegForm(props){
         }
         .edit-keg-input {
           width: 90%;
-          margin: 0.25rem;
+          margin: .25rem;
           height: 2rem;
           font-size: 1rem;
           background-color: #fafafa;
           border: none;
-          border-radius: 0.25rem;
+          border-radius: .25rem;
           outline-color: goldenrod;
         }
       `}</style>

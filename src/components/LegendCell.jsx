@@ -16,16 +16,16 @@ function LegendCell(){
           color: #333;
           padding: .125rem;
           margin: auto;
-          font-size: 0.75rem;
+          font-size: .75rem;
         }
-        
+
         .top-column-legend {
           display: flex;
           flex-direction: row;
           flex-wrap: no-wrap;
           justify-content: space-between;
           align-items: flex-start;
-        }        
+        }
         .tap-number-legend {
           text-align: left;
         }
@@ -43,12 +43,12 @@ function LegendCell(){
           align-items: space-between;
           justify-content: center;
         }
-        
+
         .brewery-legend {
           font-style: italic;
           font-weight: lighter;
         }
-        
+
         .abbreviation-legend {
           font-size: 1rem;
           font-weight: bold;
@@ -59,7 +59,7 @@ function LegendCell(){
           Tap #
         </div>
         <div className="abbreviation-legend">
-          
+
         </div>
         <div className="growler-price-legend">
           $/Growler

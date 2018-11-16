@@ -251,13 +251,13 @@ class App extends React.Component {
             max-width: max-content;
           }
           .button {
-            border-radius: 0.5rem;
+            border-radius: .5rem;
             margin: .5rem;
-            font-size: 0.9em;
+            font-size: .9em;
             border: none;
             background-color: goldenrod;
             color: saddlebrown;
-            padding: 0.5rem;
+            padding: .5rem;
             display: inline-block;
           }
           .lower-container {
