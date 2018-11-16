@@ -222,8 +222,8 @@ class App extends React.Component {
       },
       tapIdToEdit: null, //will be used in EditKegForm
       tapIdToPourFrom: null, //will be used to sell beers by clicking on their cells in the grid
-      handleBeeriodicCellSelection: this.handleBeeriodicCellSelection.bind(this)
     };
+    this.handleBeeriodicCellSelection = this.handleBeeriodicCellSelection.bind(this);
   }
 
   handleBeeriodicCellSelection(tapId) {

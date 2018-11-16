@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function BeeriodicCell(props){
   return (
     <div className="beeriodic-cell"
-      onClick={() => {props.onBeeriodicCellSelection(props.tapId)}}>
+      onClick={() => {props.onBeeriodicCellSelection(props.tapId);}}>
       <style jsx>{`
         .beeriodic-cell {
           height: 124px;
@@ -54,7 +54,7 @@ function BeeriodicCell(props){
       `}</style>
       <div className="top-column">
         <div className="tap-number">
-          {props.tapNumber}
+          {props.tapId}
         </div>
         <div className="abbreviation">
           {props.abbreviation}
@@ -81,7 +81,7 @@ function BeeriodicCell(props){
 }
 
 BeeriodicCell.propTypes = {
-  tapNumber: PropTypes.string,
+  tapId: PropTypes.string,
   abbreviation: PropTypes.string,
   growlerPrice: PropTypes.string,
   beerName: PropTypes.string,

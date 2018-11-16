@@ -39,15 +39,15 @@ function BeeriodicGrid(props) {
           let keg = props.keglist[tapId];
 
           return <BeeriodicCell
-          tapId={tapId}
-          abbreviation={keg.abbreviation}
-          growlerPrice={keg.growlerPrice}
-          beerName={keg.beerName}
-          beerStyle={keg.beerStyle}
-          brewery={keg.brewery}
-          pintsLeft={keg.pintsLeft}
-          key={tapId}
-          onBeeriodicCellSelection={props.onBeeriodicCellSelection}/>;
+            tapId={tapId}
+            abbreviation={keg.abbreviation}
+            growlerPrice={keg.growlerPrice}
+            beerName={keg.beerName}
+            beerStyle={keg.beerStyle}
+            brewery={keg.brewery}
+            pintsLeft={keg.pintsLeft}
+            key={tapId}
+            onBeeriodicCellSelection={props.onBeeriodicCellSelection}/>;
         })}
       </div>
       <Link to="/addkeg">
