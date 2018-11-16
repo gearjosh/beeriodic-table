@@ -241,6 +241,10 @@ class App extends React.Component {
             font-size: 14px;
             background-color: #fafafa;
           }
+          button:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+          }
           .main-container {
             padding: 1rem;
             margin: 0 auto;
