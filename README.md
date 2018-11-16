@@ -1,6 +1,6 @@
 # Bunsenbrewer Beeriodic Table
 
-#### A program to help track kegs for my friend's bar, November 9, 2018
+#### A program to help track kegs for my friend's bar, November 16, 2018
 
 #### By Josh Gearheart
 
