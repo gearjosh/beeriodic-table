@@ -17,7 +17,7 @@ function BeeriodicGrid(props) {
             justify-content: space-between;
             align-items: flex-start;
             margin: 0 auto;
-            max-width: max-content;
+            width: 86rem;
           }
           .beeriodic-grid {
             display: grid;

@@ -2,7 +2,8 @@ import React from 'react';
 
 import Header from './Header';
 import BeeriodicGrid from './BeeriodicGrid';
-import AddRemoveKegForm from './AddRemoveKegForm';
+import RemoveKegForm from './RemoveKegForm';
+import AddKegForm from './AddKegForm';
 import EditKegForm from './EditKegForm';
 
 class App extends React.Component {
@@ -248,7 +249,7 @@ class App extends React.Component {
           .main-container {
             padding: 1rem;
             margin: 0 auto;
-            max-width: max-content;
+            max-width: 86rem;
           }
           .button {
             border-radius: .5rem;
@@ -263,13 +264,25 @@ class App extends React.Component {
           .lower-container {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
+            flex-basis: 1;
+          }
+          .lower-container > div {
+              margin-top: 5px;
+              background-color: #4A4A4A;
+              width: 31%;
+              min-width: 20rem;
+              line-height: 1.8rem;
+              padding: .5rem;
+              border-radius: .5rem;
+              margin: 0 .5rem;
           }
         `}</style>
         <Header/>
         <BeeriodicGrid keglist={this.state.masterKegList} onBeeriodicCellSelection={this.handleBeeriodicCellSelection}/>
         <div className="lower-container">
-          <AddRemoveKegForm keglist={this.state.masterKegList} kegSelected={this.state.kegSelected}/>
+          <RemoveKegForm keglist={this.state.masterKegList} kegSelected={this.state.kegSelected}/>
+          <AddKegForm keglist={this.state.masterKegList} kegSelected={this.state.kegSelected}/>
           <EditKegForm keglist={this.state.masterKegList} kegSelected={this.state.kegSelected}/>
         </div>
       </div>

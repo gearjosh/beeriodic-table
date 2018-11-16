@@ -58,25 +58,13 @@ function EditKegForm(props){
   }
   return (
     <div>
-      <div className="edit-area">
-        <style jsx>{`
-          h2 {
-            color: goldenrod;
-          }
-          .edit-area {
-            margin-top: 5px;
-            background-color: #4A4A4A;
-            max-width: 30vw;
-            min-width: 20rem;
-            line-height: 1.8rem;
-            padding: .5rem;
-            border-radius: .5rem;
-            margin: 0 auto;
-          }
-        `}</style>
-        <h2>Edit Keg</h2>
-        {editFormToShow}
-      </div>
+      <style jsx>{`
+        h2 {
+          color: goldenrod;
+        }
+      `}</style>
+      <h2>Edit Keg</h2>
+      {editFormToShow}
     </div>
   );
 }
