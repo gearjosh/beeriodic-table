@@ -220,15 +220,14 @@ class App extends React.Component {
           pintsLeft: '34',
         }
       },
-      tapIdToEdit: null, //will be used in EditKegForm
-      tapIdToPourFrom: null, //will be used to sell beers by clicking on their cells in the grid
+      kegSelected: null
     };
     this.handleBeeriodicCellSelection = this.handleBeeriodicCellSelection.bind(this);
   }
 
   handleBeeriodicCellSelection(tapId) {
-    this.setState({tapIdToPourFrom: tapId});
-    console.log('the tap ID is ' + this.state.tapIdToPourFrom);
+    this.setState({kegSelected: tapId});
+    console.log('the tap ID is ' + this.state.kegSelected);
   }
 
   render() {
@@ -269,7 +268,7 @@ class App extends React.Component {
         <BeeriodicGrid keglist={this.state.masterKegList} onBeeriodicCellSelection={this.handleBeeriodicCellSelection}/>
         <div className="lower-container">
           <AddRemoveKegForm/>
-          <EditKegForm/>
+          <EditKegForm keglist={this.state.masterKegList} kegSelected={this.state.kegSelected}/>
         </div>
       </div>
     );
