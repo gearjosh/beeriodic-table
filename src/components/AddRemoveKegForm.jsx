@@ -15,7 +15,7 @@ function AddRemoveKegForm(){
             border-radius: .5rem;
             margin: 0 auto;
           }
-          .add-keg-input {
+          .add-remove-keg-input {
             width: 90%;
             margin: 0.25rem;
             height: 2rem;
@@ -27,15 +27,17 @@ function AddRemoveKegForm(){
           }
         `}</style>
         <form>
-          
+          <input className="add-remove-keg-input" placeholder="Tap Number"/>
+          <br/>
+          <button className="button">Remove Keg</button>
         </form>
         <form>
-          <input className="add-keg-input" placeholder="Tap Number" type="text"/>
-          <input className="add-keg-input" placeholder="Beer Name" type="text"/>
-          <input className="add-keg-input" placeholder="Beer Style" type="text"/>
-          <input className="add-keg-input" placeholder="Abbreviation" type="text"/>
-          <input className="add-keg-input" placeholder="Brewery" type="text"/>
-          <input className="add-keg-input" placeholder="Growler Price" type="number"/>
+          <input className="add-remove-keg-input" placeholder="Tap Number" type="text"/>
+          <input className="add-remove-keg-input" placeholder="Beer Name" type="text"/>
+          <input className="add-remove-keg-input" placeholder="Beer Style" type="text"/>
+          <input className="add-remove-keg-input" placeholder="Abbreviation" type="text"/>
+          <input className="add-remove-keg-input" placeholder="Brewery" type="text"/>
+          <input className="add-remove-keg-input" placeholder="Growler Price" type="number"/>
           <br/>
           <button className="button">Add Keg</button>
           <button className="button">Cancel</button>
