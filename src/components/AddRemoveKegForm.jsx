@@ -7,13 +7,13 @@ function AddRemoveKegForm(props){
     const dangerStyle = {
       backgroundColor: 'maroon',
       color: 'wheat'
-    }
+    };
     const removeButtonWithKegSelected = <button style={dangerStyle} className="button">Remove {props.keglist[props.kegSelected].beerName} {props.keglist[props.kegSelected].beerStyle}</button>;
     removeElementToShow = removeButtonWithKegSelected;
   } else {
     const textStyle = {
       color: 'wheat'
-    }
+    };
     const removeTextNoKegSelected = <p style={textStyle}>No Keg Selected</p>;
     removeElementToShow = removeTextNoKegSelected;
   }
@@ -71,6 +71,6 @@ function AddRemoveKegForm(props){
 AddRemoveKegForm.propTypes = {
   keglist: PropTypes.object,
   kegSelected: PropTypes.string
-}
+};
 
 export default AddRemoveKegForm;
