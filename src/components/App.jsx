@@ -13,7 +13,7 @@ class App extends React.Component {
     this.state = {
       masterKegList: {
         '1': {
-          tapNumber: '1',
+          tapId: '1',
           abbreviation: 'Ii',
           growlerPrice: '13',
           beerName: 'Imperial',
@@ -22,7 +22,7 @@ class App extends React.Component {
           pintsLeft: '44',
         },
         '2': {
-          tapNumber: '2',
+          tapId: '2',
           abbreviation: 'T',
           growlerPrice: '12',
           beerName: 'Tesla',
@@ -31,7 +31,7 @@ class App extends React.Component {
           pintsLeft: '100',
         },
         '3': {
-          tapNumber: '3',
+          tapId: '3',
           abbreviation: 'Ed',
           growlerPrice: '12',
           beerName: 'Edison',
@@ -40,7 +40,7 @@ class App extends React.Component {
           pintsLeft: '66',
         },
         '4': {
-          tapNumber: '4',
+          tapId: '4',
           abbreviation: 'Bc',
           growlerPrice: '13',
           beerName: 'Bright',
@@ -49,7 +49,7 @@ class App extends React.Component {
           pintsLeft: '100',
         },
         '5': {
-          tapNumber: '5',
+          tapId: '5',
           abbreviation: 'Vb',
           growlerPrice: '13',
           beerName: 'von Braun',
@@ -58,7 +58,7 @@ class App extends React.Component {
           pintsLeft: '32',
         },
         '6': {
-          tapNumber: '6',
+          tapId: '6',
           abbreviation: 'Oc',
           growlerPrice: '13',
           beerName: 'Old Chub',
@@ -67,7 +67,7 @@ class App extends React.Component {
           pintsLeft: '31',
         },
         '7': {
-          tapNumber: '7',
+          tapId: '7',
           abbreviation: 'F',
           growlerPrice: '13',
           beerName: 'Fahrenheit',
@@ -76,7 +76,7 @@ class App extends React.Component {
           pintsLeft: '87',
         },
         '8': {
-          tapNumber: '8',
+          tapId: '8',
           abbreviation: 'By',
           growlerPrice: '13',
           beerName: 'Byron',
@@ -85,7 +85,7 @@ class App extends React.Component {
           pintsLeft: '47',
         },
         '9': {
-          tapNumber: '9',
+          tapId: '9',
           abbreviation: 'G',
           growlerPrice: '13',
           beerName: 'Goodall',
@@ -94,7 +94,7 @@ class App extends React.Component {
           pintsLeft: '32',
         },
         '10': {
-          tapNumber: '10',
+          tapId: '10',
           abbreviation: 'Rc',
           growlerPrice: '13',
           beerName: 'Revival',
@@ -103,7 +103,7 @@ class App extends React.Component {
           pintsLeft: '8',
         },
         '11': {
-          tapNumber: '11',
+          tapId: '11',
           abbreviation: 'Bn',
           growlerPrice: '13',
           beerName: 'Bill Nye',
@@ -112,7 +112,7 @@ class App extends React.Component {
           pintsLeft: '100',
         },
         '12': {
-          tapNumber: '12',
+          tapId: '12',
           abbreviation: 'Pr',
           growlerPrice: '13',
           beerName: 'Proletariat',
@@ -121,7 +121,7 @@ class App extends React.Component {
           pintsLeft: '67',
         },
         '13': {
-          tapNumber: '13',
+          tapId: '13',
           abbreviation: 'Hi',
           growlerPrice: '13',
           beerName: 'Hutchins',
@@ -130,7 +130,7 @@ class App extends React.Component {
           pintsLeft: '121',
         },
         '14': {
-          tapNumber: '14',
+          tapId: '14',
           abbreviation: 'Do',
           growlerPrice: '13',
           beerName: 'Dothraki',
@@ -139,7 +139,7 @@ class App extends React.Component {
           pintsLeft: '31',
         },
         '15': {
-          tapNumber: '15',
+          tapId: '15',
           abbreviation: 'Wh',
           growlerPrice: '13',
           beerName: 'White Light',
@@ -148,7 +148,7 @@ class App extends React.Component {
           pintsLeft: '114',
         },
         '16': {
-          tapNumber: '16',
+          tapId: '16',
           abbreviation: 'Sd',
           growlerPrice: '13',
           beerName: 'Sun Dazed',
@@ -157,7 +157,7 @@ class App extends React.Component {
           pintsLeft: '24',
         },
         '17': {
-          tapNumber: '17',
+          tapId: '17',
           abbreviation: 'Cc',
           growlerPrice: '13',
           beerName: 'Cherry',
@@ -166,7 +166,7 @@ class App extends React.Component {
           pintsLeft: '84',
         },
         '18': {
-          tapNumber: '18',
+          tapId: '18',
           abbreviation: 'Ri',
           growlerPrice: '13',
           beerName: 'RPM',
@@ -175,7 +175,7 @@ class App extends React.Component {
           pintsLeft: '23',
         },
         '19': {
-          tapNumber: '19',
+          tapId: '19',
           abbreviation: 'He',
           growlerPrice: '13',
           beerName: 'Hefeweizen',
@@ -184,7 +184,7 @@ class App extends React.Component {
           pintsLeft: '99',
         },
         '20': {
-          tapNumber: '20',
+          tapId: '20',
           abbreviation: 'Ss',
           growlerPrice: '13',
           beerName: 'Semmelweis',
@@ -193,7 +193,7 @@ class App extends React.Component {
           pintsLeft: '61',
         },
         '21': {
-          tapNumber: '21',
+          tapId: '21',
           abbreviation: 'Aa',
           growlerPrice: '13',
           beerName: 'African',
@@ -202,7 +202,7 @@ class App extends React.Component {
           pintsLeft: '56',
         },
         '22': {
-          tapNumber: '22',
+          tapId: '22',
           abbreviation: 'C',
           growlerPrice: '13',
           beerName: 'Celsius',
@@ -211,7 +211,7 @@ class App extends React.Component {
           pintsLeft: '98',
         },
         '23': {
-          tapNumber: '23',
+          tapId: '23',
           abbreviation: 'Rb',
           growlerPrice: '13',
           beerName: 'Root',
@@ -219,15 +219,16 @@ class App extends React.Component {
           brewery: 'Crater Lake',
           pintsLeft: '34',
         }
-      }
+      },
+      tapIdToEdit: null, //will be used in EditKegForm
+      tapIdToPourFrom: null, //will be used to sell beers by clicking on their cells in the grid
+      handleBeeriodicCellSelection: this.handleBeeriodicCellSelection.bind(this)
     };
-    this.handleBeeriodicCellSelection = this.handleBeeriodicCellSelection.bind(this);
-    this.tapIdToEdit = null; //will be used in EditKegForm
-    this.tapIdToPourFrom = null; //will be used to sell beers by clicking on their cells in the grid
   }
 
-  handleBeeriodicCellSelection() {
-    console.log('this was a successful click!');
+  handleBeeriodicCellSelection(tapId) {
+    this.setState({tapIdToPourFrom: tapId});
+    console.log('the tap ID is ' + this.state.tapIdToPourFrom);
   }
 
   render() {
@@ -260,7 +261,7 @@ class App extends React.Component {
           }
         `}</style>
         <Header/>
-      <BeeriodicGrid onBeeriodicCellSelection={this.handleBeeriodicCellSelection}/>
+        <BeeriodicGrid keglist={this.state.masterKegList} onBeeriodicCellSelection={this.handleBeeriodicCellSelection}/>
         <Switch>
           <Route path="/addkeg" component={AddKegForm}/>
           <Route path="/editkeg" component={EditKegForm}/>
