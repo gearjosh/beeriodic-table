@@ -24,7 +24,7 @@ Designing in React feels a lot more elegant than design in Angular.  I feel like
 
 Below is the most up-to-date documentation of my planned components.  This is a slight change from my original idea,  in which BeeriodicTable was nested inside each route.  In this updated version, it lives directly in App, and the router only routes to admin options such as adding or editing kegs.
 
-I also ended up removi
+I also ended up removing a couple of inputs that asked for a keg number.  It turned out it was more elegant to just make that happen as the result of a click function.
 
 ![component structure drawing 2](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/component-map-2.jpg)
 
