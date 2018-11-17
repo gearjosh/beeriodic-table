@@ -27,9 +27,11 @@ function BeeriodicCell(props){
         }
         .tap-number {
           text-align: left;
+          width: 1rem;
         }
         .growler-price {
           text-align: right;
+          width: 1rem;
         }
         .bottom-column {
           display: flex;
