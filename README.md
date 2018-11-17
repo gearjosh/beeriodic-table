@@ -8,11 +8,11 @@
 
 This is a rebuild of a previous site I made in Angular.  This time, however, I'm designing it to fit more closely with how his actual bar works.  Some of the previous  elements have been changed (ABV became Price per Growler, for instance), but the spirit is the same as the original.
 
-At this point, there is no interaction beyond routing.  This is simply the skeleton.
+At this point, you can add a new keg and remove a keg.  Soon you will also be able to edit kegs.
 
 It looks like this:
 
-![beeriodic table app](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/screenshot.png)
+![beeriodic table app](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/beeriodic-table-6-16.png)
 
 This is the actual menu from [the actual bar](http://www.bunsenbrewer.com/) the app is based on:
 
@@ -23,6 +23,8 @@ Designing in React feels a lot more elegant than design in Angular.  I feel like
 ## Planning
 
 Below is the most up-to-date documentation of my planned components.  This is a slight change from my original idea,  in which BeeriodicTable was nested inside each route.  In this updated version, it lives directly in App, and the router only routes to admin options such as adding or editing kegs.
+
+I also ended up removi
 
 ![component structure drawing 2](https://raw.githubusercontent.com/gearjosh/beeriodic-table/master/src/img/component-map-2.jpg)
 
@@ -77,7 +79,7 @@ If you have a windows machine, you may also need a terminal program.  If so, dow
 - It's hard to tell how to form the components in my beeriodic cells.  Because the grid will take in the master keg list, it could just populate the entire grid within a single component.  And since the grid will show on every screen, it's not like I'll be reusing that code outside the component itself...
 
 ## Known Bugs
-- No known bugs. But... it doesn't _do_ anything yet.  All there is is the bones right now.  Soon, though, you'll be able to use it to actually track beer!
+- No known bugs. But... it's still a work in progress, so it doesn't yet have full CRUD functionality yet, only the CR_D.  I still need to build out the edit functionality.
 
 ## Support and contact details
 - For questions or support open an issue right here in this repo!
