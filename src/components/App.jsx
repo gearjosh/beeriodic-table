@@ -224,6 +224,7 @@ class App extends React.Component {
     };
     this.handleBeeriodicCellSelection = this.handleBeeriodicCellSelection.bind(this);
     this.handleAddingNewKeg = this.handleAddingNewKeg.bind(this);
+    this.handleRemovingKeg = this.handleRemovingKeg.bind(this);
   }
 
   handleBeeriodicCellSelection(tapId) {
@@ -234,6 +235,19 @@ class App extends React.Component {
     let newMasterKeglist = Object.assign({}, this.state.masterKegList, {
       [newKeg.tapId]: newKeg
     });
+    this.setState({masterKegList: newMasterKeglist});
+  }
+
+  handleRemovingKeg(emptyKegId) {
+    let newMasterKeglist = Object.assign({}, this.state.masterKegList);
+    newMasterKeglist[emptyKegId] = {
+      beerName: 'Dead',
+      beerStyle: 'Keg',
+      abbreviation: 'Xx',
+      tapId: emptyKegId,
+      growlerPrice: '0',
+      brewery: 'No Beer Here'
+    };
     this.setState({masterKegList: newMasterKeglist});
   }
 
@@ -291,6 +305,7 @@ class App extends React.Component {
         <BeeriodicGrid keglist={this.state.masterKegList} onBeeriodicCellSelection={this.handleBeeriodicCellSelection}/>
         <div className="lower-container">
           <RemoveKegForm
+            onRemovingKeg={this.handleRemovingKeg}
             keglist={this.state.masterKegList}
             kegSelected={this.state.kegSelected}/>
           <AddKegForm

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function RemoveKegForm(props){
   let removeElementToShow = null;
-  // let confirmButtonArea = null;
+  let confirmButtonArea = null;
   // let removeButtonClicked = false;
   const dangerStyle = {
     backgroundColor: 'maroon',
@@ -12,26 +12,23 @@ function RemoveKegForm(props){
   const textStyle = {
     color: 'wheat'
   };
+  // const confirmButton = <button style={dangerStyle} className="button">Click to remove {props.keglist[props.kegSelected].beerName} {props.keglist[props.kegSelected].beerStyle}</button>;
 
-  // function toggleConfirm() {
-  //   if (removeButtonClicked) {
-  //     removeButtonClicked = false;
-  //     console.log(removeButtonClicked);
-  //   } else {
-  //     removeButtonClicked = true;
-  //     console.log(removeButtonClicked);
-  //   }
-  // };
+  function handleRemoveButtonClick(event) {
+    event.preventDefault();
+    if (confirm('Are you sure?')) {
+      props.onRemovingKeg(props.kegSelected);
+    }
+  }
 
   if (props.kegSelected != null) {
-    const removeButtonWithKegSelected = <button style={dangerStyle} /*onClick={toggleConfirm()}*/ className="button">Remove {props.keglist[props.kegSelected].beerName} {props.keglist[props.kegSelected].beerStyle}</button>;
+    const removeButtonWithKegSelected = <button style={dangerStyle} onClick={handleRemoveButtonClick} className="button">Remove {props.keglist[props.kegSelected].beerName} {props.keglist[props.kegSelected].beerStyle}</button>;
     removeElementToShow = removeButtonWithKegSelected;
   } else {
     const removeTextNoKegSelected = <p style={textStyle}>No Keg Selected</p>;
     removeElementToShow = removeTextNoKegSelected;
   }
   // if (removeButtonClicked === true) {
-  //   const confirmButton = <button style={dangerStyle} className="button">Click to remove {props.keglist[props.kegSelected].beerName} {props.keglist[props.kegSelected].beerStyle}</button>;
   //   confirmButtonArea = confirmButton;
   // } else {
   //   confirmButtonArea = null;
@@ -56,15 +53,16 @@ function RemoveKegForm(props){
       `}</style>
       <h2>Remove Keg</h2>
       {removeElementToShow}
-      {/* <br/>
-      {confirmButtonArea} */}
+      <br/>
+      {confirmButtonArea}
     </div>
   );
 }
 
 RemoveKegForm.propTypes = {
   keglist: PropTypes.object,
-  kegSelected: PropTypes.string
+  kegSelected: PropTypes.string,
+  onRemovingKeg: PropTypes.func
 };
 
 export default RemoveKegForm;
