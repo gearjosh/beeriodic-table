@@ -249,6 +249,7 @@ class App extends React.Component {
       brewery: 'No Beer Here'
     };
     this.setState({masterKegList: newMasterKeglist});
+    this.setState({kegSelected: null})
   }
 
   render() {
